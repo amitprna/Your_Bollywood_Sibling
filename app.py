@@ -11,7 +11,16 @@ from sklearn.metrics.pairwise import cosine_similarity
 from PIL import Image
 import cv2
 from mtcnn import MTCNN
+from streamlit_lottie import st_lottie
 
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+url = "https://assets7.lottiefiles.com/private_files/lf30_y5tq70sy.json"
+res_json = 
 
 st.title('Your Sibling From Bollywood')
 
