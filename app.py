@@ -80,7 +80,7 @@ if uploaded_image is not None:
             st.image(display_image)
         with col2:
             lis = filenames[index_pos].split('\\')
-            lis1 = "\\".join(lis[:2])
-            out_img = lis1+'\\image.jpg'
+            lis1 = "/".join(lis[:2])
+            out_img = lis1+'/image.jpg'
             st.header("Your Sibling \n" + predicted_actor)
             st.image(out_img,width=300)
