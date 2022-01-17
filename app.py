@@ -20,7 +20,8 @@ def load_lottieurl(url: str):
     return r.json()
 
 url = "https://assets7.lottiefiles.com/private_files/lf30_y5tq70sy.json"
-res_json = 
+res_json = load_lottieurl(url)
+st_lottie(res_json)
 
 st.title('Your Sibling From Bollywood')
 
