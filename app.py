@@ -2,6 +2,7 @@ import os
 import numpy as np
 import streamlit as st
 import pickle
+import requests
 
 from keras_vggface.utils import preprocess_input
 from keras_vggface.vggface import VGGFace
