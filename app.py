@@ -22,9 +22,16 @@ def load_lottieurl(url: str):
 
 url = "https://assets7.lottiefiles.com/private_files/lf30_y5tq70sy.json"
 res_json = load_lottieurl(url)
-st_lottie(res_json)
+st_lottie(res_json,height=300,width=1200)
 
-st.title('Your Sibling From Bollywood')
+html_temp = """
+<body style="background-color:red;">
+<div style="background-color:teal ;padding:10px">
+<h3 style="color:white;text-align:center;">Find Your Sibling From Bollywood.</h3>
+</div>
+</body>
+"""
+st.markdown(html_temp, unsafe_allow_html=True)
 
 
 detector = MTCNN()
